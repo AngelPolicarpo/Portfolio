@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import Image from "next/image";  
+=======
+import Image from "next/image";
+>>>>>>> 6084bea7bdbd7856f08bb0c2a64fe4e4cfee4130
 import minhaImagem from '../public/assets/img/Me.png';
 
 export async function getStaticProps() {
