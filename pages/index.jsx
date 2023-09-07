@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Image from "next/image";  
+import minhaImagem from '../public/assets/img/Me.png';
 
 export async function getStaticProps() {
   return {
@@ -23,8 +24,8 @@ export default function Home() {
       <div className="mt-12 mb-12 px-6">
         <div className='flex sm:flex-col justify-center items-center gap-6'>
           <Image
-            src="/assets/img/Me.png"
-            alt="Imagem ilustrativa de mim"
+            src={minhaImagem}
+            alt="Avatar"
             width={75}
             height={100}
             style={{ backgroundColor: '#fff5', borderRadius: '50%', border: '3px solid #1F1F1F55' }}
@@ -34,7 +35,8 @@ export default function Home() {
        
       </div>
       <div className="mt-6 mb-12 flex justify-center">
-        <button className="button-31" title="Baixar Curriculum Vitae" role="button">BAIXAR CV</button>
+
+        <a href="/profile.pdf" target="_blank" rel="noopener noreferrer"><button className="button-31" title="Baixar Curriculum Vitae" role="button">BAIXAR CV</button></a>
       </div>
       <div className="flex gap-6 mt-12 mb-12 upscale">
         <a target="_blank" href="https://github.com/AngelPolicarpo" title="Visite o meu GitHub"  rel="noopener noreferrer">
