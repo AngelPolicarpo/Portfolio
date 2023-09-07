@@ -36,7 +36,7 @@ export default function Home() {
       </div>
       <div className="mt-6 mb-12 flex justify-center">
 
-        <a href="../profile.pdf" target="_blank" rel="noopener noreferrer"><button className="button-31" title="Baixar Curriculum Vitae" role="button">BAIXAR CV</button></a>
+        <a href="/Portfolio/profile.pdf" target="_blank" rel="noopener noreferrer"><button className="button-31" title="Baixar Curriculum Vitae" role="button">BAIXAR CV</button></a>
       </div>
       <div className="flex gap-6 mt-12 mb-12 upscale">
         <a target="_blank" href="https://github.com/AngelPolicarpo" title="Visite o meu GitHub"  rel="noopener noreferrer">
