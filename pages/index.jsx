@@ -1,4 +1,5 @@
 import Image from "next/image";
+import minhaImagem from '../public/assets/img/Me.png';
 
 export async function getStaticProps() {
   return {
@@ -23,7 +24,7 @@ export default function Home() {
       <div className="mt-12 mb-12 px-6">
         <div className='flex sm:flex-col justify-center items-center gap-6'>
           <Image
-            src="../assets/img/Me.png"
+            src={minhaImagem}
             alt="Avatar"
             width={75}
             height={100}
