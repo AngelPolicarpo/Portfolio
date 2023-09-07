@@ -23,8 +23,8 @@ export default function Home() {
       <div className="mt-12 mb-12 px-6">
         <div className='flex sm:flex-col justify-center items-center gap-6'>
           <Image
-            src="/assets/img/Me.png"
-            alt="Imagem ilustrativa de mim"
+            src="../assets/img/Me.png"
+            alt="Avatar"
             width={75}
             height={100}
             style={{ backgroundColor: '#fff5', borderRadius: '50%', border: '3px solid #1F1F1F55' }}
