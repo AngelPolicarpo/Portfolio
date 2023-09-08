@@ -47,7 +47,6 @@ function Navbar({ pageId }) {
 export default function Layout({children}) {
     return (
       <div id="bgc">
-        <Navbar pageId={children.props.pageId} />
         <main>{children}</main>
         <Footer />
       </div>
