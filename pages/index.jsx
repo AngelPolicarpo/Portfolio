@@ -1,26 +1,16 @@
+import Head from "next/head";
 import Image from "next/image";  
 import minhaImagem from '../public/assets/img/Me.png';
 
-export async function getStaticProps() {
-  return {
-    props: {
-      pageId: "about_me",
-      metadata: {
-        title: "Angel Policarpo",
-        description: "Conheça Angel Policarpo, um desenvolvedor Full Stack.",
-        openGraph: {
-          image: "https://example.com/image.jpg",
-          url: "https://example.com"
-        }
-      }
-    }
-  }
-}
 
 export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Portfólio - Angel Policarpo</title>
+        <meta name="description" content="Conheça Angel Policarpo, um desenvolvedor Full Stack experiente em TypeScript, MERN Stack, Next.js e Tailwind CSS." />
+      </Head>
       <div className="mt-12 mb-12 px-6">
         <div className='flex sm:flex-col justify-center items-center gap-6'>
           <Image
@@ -36,7 +26,7 @@ export default function Home() {
       </div>
       <div className="mt-6 mb-12 flex justify-center">
 
-        <a href="/profile.pdf" target="_blank" rel="noopener noreferrer"><button className="button-31" title="Baixar Curriculum Vitae" role="button">BAIXAR CV</button></a>
+        <a href="../profile.pdf" target="_blank" rel="noopener noreferrer"><button className="button-31" title="Baixar Curriculum Vitae" role="button">BAIXAR CV</button></a>
       </div>
       <div className="flex gap-6 mt-12 mb-12 upscale">
         <a target="_blank" href="https://github.com/AngelPolicarpo" title="Visite o meu GitHub"  rel="noopener noreferrer">
